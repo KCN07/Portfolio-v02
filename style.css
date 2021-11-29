@@ -1,0 +1,173 @@
+.header{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width:200px;
+}
+
+.typed-out{
+  overflow: hidden;
+ 
+  white-space: nowrap;
+  animation: 
+  typing 1s steps(20, end) forwards;
+  font-size: 1.5rem;
+  width: 0;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .scrolldown {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 50px;
+    margin: auto;
+  }
+  .scrolldown a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.6;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .scrolldown a:hover {
+    opacity: 0.9;
+  }
+
+  .about-header {
+    margin-bottom: 56px;
+    font-size: 40px;
+    font-weight:900;
+    color: black;
+}
+
+.card-title, .card-footer{
+    color: red;
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+.card-footer, .subheader{
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], .message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgb(246 246 246);
+  }
+  
+  input[type=text]:focus {
+    border-bottom: 3px solid red;
+  }
+  input[type=email]:focus {
+    border-bottom: 3px solid red;
+  }
+  .message:focus {
+    border-bottom: 3px solid red;
+  }
+
+  /* projects */
+  .single-project {
+    position: relative;
+    width: 250px;
+    height: fit-content;
+    background: #ffffff;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px grey;
+  }
+  
+  .single-project a {
+    text-decoration: none;
+  }
+  
+  .single-project img {
+    height: 215px;
+    width: 250px;
+    box-shadow: 2px 0 4px grey;
+    object-fit: cover;
+  }
+  
+  .project-title h3 {
+    color: #444444;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .project-img {
+    background: #ffffff;
+    height: 214px;
+  }
+  .project-banner {
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    position: absolute;
+    top: 0;
+    padding: 15px 15px;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 215px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .project-icon {
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .project-img:hover .project-overlay {
+    opacity: 1;
+  }
+   
+  .tech{
+      margin: 10px;
+  }
+  .tech-icon{
+    color: red; 
+    font-size: 40px; 
+    margin-bottom: 16px; 
+    padding: 40px 16px 24px 16px;
+  }
